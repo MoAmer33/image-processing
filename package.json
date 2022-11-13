@@ -1,0 +1,43 @@
+{
+  "name": "firstproject",
+  "version": "1.0.0",
+  "description": "This is my first project in full stack advanced at udacity this is resize image using api",
+  "main": "index.js",
+  "scripts": {
+    "Test": "npx tsc && jasmine",
+    "dev": "nodemon ./src/index.ts",
+    "build": "npx tsc",
+    "StartServer": "npm run build && nodemon build/index.js",
+    "format": "prettier --write 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "Mo&udacity",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sharp": "^0.31.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/jasmine": "^3.10.2",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^16.11.12",
+    "@types/sharp": "^0.31.0",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "install": "^0.13.0",
+    "nodemon": "^2.0.15",
+    "npm": "^8.19.2",
+    "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
